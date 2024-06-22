@@ -1,0 +1,125 @@
+.weather-dashboard{
+   
+    height: 100vh;
+    width: 100vw;
+    color: black;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: sans-serif;
+}
+.main-heading{
+    text-align: center;
+    font-size: 40px;
+    
+}
+.main-paragraph{
+    text-align: center;
+    font-size: 27px;
+    margin: 0px;
+    
+}
+
+.main-paragraph span{
+    color: rgb(15, 171, 83);
+    font-weight: 600;
+   
+}
+.input-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+    margin-top: 20px;
+}
+.input-container input{
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 10px 0px 10px;
+    color: black;
+    font-size: 20px;
+    border: 1px;
+    margin-right: 20px;
+   
+}
+.search{
+    
+    border-color:1px solid slateblue !important;
+}
+.content{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.error-message{
+    color: red;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: 600;
+    margin-left: -100px;
+}
+.weather-data{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+.list-container{
+    list-style-type: none;
+    padding-left: 0px;
+    border: 1px solid #303030;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.list-container li{
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    font-size: 24px;
+    
+
+}
+.li{
+    color: slateblue;
+}
+@media (max-width: 768px){
+    .weather-data{
+        flex-direction: column;
+    }
+    .list-container li{
+        font-size: 25px;
+    }
+    .main-heading{
+        font-size: 35px;
+        padding-top: 20px;
+    }
+    .main-paragraph{
+        font-size: 21px;
+        padding: 5px 10px 5px 10px;
+    }
+    .input-container{
+        flex-direction: column;
+    }
+    .input-container button{
+        margin-top: 15px;
+    }
+}
+@media (max-width:820px){
+    .weather-data{
+        flex-direction: column;
+    }
+    .main-heading{
+        padding-top: 20px;
+    }
+}
